@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    // <!--Places API URL--> //
+    var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://worldwide-restaurants.p.rapidapi.com/photos",
+	"method": "POST",
+	"headers": {
+		"x-rapidapi-host": "worldwide-restaurants.p.rapidapi.com",
+		"x-rapidapi-key": "4e481f9ecbmsh33281247a0ea5b2p15a86ejsneabeb0eeb70d",
+		"content-type": "application/x-www-form-urlencoded"
+	},
+	"data": {
+		"language": "en_US",
+		"location_id": "15333482",
+		"currency": "USD",
+		"limit": "15"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+    
+
+});
+
+console.log("hello");
+</script>
+</body>
+</html>
+
+
+
+
+  
